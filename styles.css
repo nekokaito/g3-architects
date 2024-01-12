@@ -120,6 +120,7 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 1.81rem;
 }
 .facts-des {
   color: #727272;
@@ -138,6 +139,9 @@ main {
   border: 1px solid #ff900e;
   text-align: center;
   padding: 40px;
+  width: 241.831px;
+
+
 }
 .cards-stats {
     color:  #424242;
@@ -146,6 +150,7 @@ font-size: 45px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+
 }
 .cards-info {
     color: var(--Dark-03, #727272);
@@ -155,6 +160,39 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 margin:10px 0;
+
+}
+.cards-container {
+  margin-top: 50px;
+}
+.spon {
+  margin-top: 257px;
+}
+.spon-title {
+  text-align: center;
+  color:  #131313;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 50px;
+
+}
+.spon-des {
+  color: #727272;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+}
+.spon-img-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.spon-img-container img {
+  filter: grayscale(100%);
 }
 
 /* Responsive Header and Banner for Mobile */
@@ -169,6 +207,9 @@ margin:10px 0;
   }
   .feature-imgs {
     grid-template-columns: 1fr;
+    width: 30%
+    align-items: center;
+    
   }
   .feature-content {
     padding-left: 20px;
@@ -177,10 +218,25 @@ margin:10px 0;
   .btn-ex {
     margin-left: 30%;
   }
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .spon-img-container {
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+  }
+  .spon-img-container img {
+    width: 50%;
+  }
+  
+  
 }
 /* Responsive Header and Banner for Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  nav {
+  nav, .spon-img-container {
     flex-direction: column;
   }
   header {
