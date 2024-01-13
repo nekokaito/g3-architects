@@ -110,6 +110,86 @@ main {
   font-weight: 400;
   margin-bottom: 20px;
 }
+.feature-col {
+  display: flex;
+  margin-top: 130px;
+  gap: 100px;
+}
+.feature-title {
+  color:  #131313;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.feature-des {
+  color:  #727272;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+  margin-bottom: 30px;
+}
+.ten-years {
+  border-radius: 8px;
+background: #FF900E;
+width: 342px;
+height: 200px;
+flex-shrink: 0;
+position: relative;
+bottom: 100px;
+}
+.ten-years h1{
+  color: #FFF;
+text-align: center;
+font-family: Work Sans;
+font-size: 65px;
+font-style: normal;
+font-weight: 700;
+line-height: 70px; /* 107.692% */
+padding: 20px;
+}
+.feature-banner {
+  height: 90%;
+  margin-left: 80px;
+}
+.ten-years p {
+  color: #FFF;
+  text-align: center;
+font-family: Work Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+}
+.f-card {
+  border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+margin-bottom: 20px;
+margin-top: 30px;
+}
+.f-title {
+  color: var(--Dark-01, #131313);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.f-des {
+  color: var(--Dark-03, #727272);
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
 .facts {
     margin-top: 130px;
 }
@@ -206,11 +286,11 @@ margin-bottom: 50px;
     flex-direction: column;
   }
   .feature-imgs {
+    align-items : center;
     grid-template-columns: 1fr;
     width: 30%
-    align-items: center;
-    
   }
+  
   .feature-content {
     padding-left: 20px;
     padding-right: 20px;
@@ -231,9 +311,8 @@ margin-bottom: 50px;
   .spon-img-container img {
     width: 50%;
   }
-  
-  
-}
+
+
 /* Responsive Header and Banner for Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   nav, .spon-img-container {
