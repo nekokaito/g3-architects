@@ -6,6 +6,9 @@
   margin: 0;
   font-family: Work Sans;
 }
+html, body {
+  overflow-x: hidden;
+}
 .btn-primary {
   border-radius: 8px;
   background: #ff900e;
@@ -54,6 +57,7 @@ nav a {
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
+  
 }
 
 .banner-title {
@@ -175,7 +179,7 @@ margin-bottom: 20px;
 margin-top: 30px;
 }
 .f-title {
-  color: var(--Dark-01, #131313);
+  color: #131313;
   font-family: Work Sans;
   font-size: 20px;
   font-style: normal;
@@ -183,7 +187,7 @@ margin-top: 30px;
   line-height: normal;
 }
 .f-des {
-  color: var(--Dark-03, #727272);
+  color:#727272 ;
 font-family: Work Sans;
 font-size: 16px;
 font-style: normal;
@@ -220,8 +224,6 @@ line-height: 26px; /* 162.5% */
   text-align: center;
   padding: 40px;
   width: 241.831px;
-
-
 }
 .cards-stats {
     color:  #424242;
@@ -233,7 +235,7 @@ line-height: normal;
 
 }
 .cards-info {
-    color: var(--Dark-03, #727272);
+    color:  #727272;
 font-family: Work Sans;
 font-size: 20px;
 font-style: normal;
@@ -274,6 +276,23 @@ margin-bottom: 50px;
 .spon-img-container img {
   filter: grayscale(100%);
 }
+footer {
+  max-width: 1440px;
+  margin: 120px auto;
+  border-radius: 8px;
+  background: #fff4e7;
+  text-align: center;
+  padding: 40px 0px;
+}
+footer p {
+  color:  #424242;
+text-align: center;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 
 /* Responsive Header and Banner for Mobile */
 
@@ -281,14 +300,20 @@ margin-bottom: 50px;
   header {
     padding: 20px;
   }
+  .banner-content {
+    padding: 20px;
+  }
+  .banner-title {
+    font-size: 2.8rem;
+  }
   nav,
   .feature-list {
     flex-direction: column;
   }
   .feature-imgs {
-    align-items : center;
+    
     grid-template-columns: 1fr;
-    width: 30%
+    
   }
   
   .feature-content {
@@ -311,7 +336,43 @@ margin-bottom: 50px;
   .spon-img-container img {
     width: 50%;
   }
+  .feature-col {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feature-banner img {
+    width: 100%;
 
+    
+  }
+  .feature-banner {
+    margin-left: 30px;
+  }
+  .f-card {
+    padding: 20px;
+  }
+  .feature-text {
+    padding: 20px;
+  }
+  .facts {
+    padding: 20px;
+  }
+  .ten-years {
+    border-radius: 8px;
+  background: #FF900E;
+  width: 200px;
+  height: 180px;
+  flex-shrink: 0;
+  position: relative;
+  /* bottom: 100px; */
+  }
+  .ten-years h1 {
+    font-size: 2rem;
+  }
+  .ten-years p {
+    font-size: ;
+  }
+}
 
 /* Responsive Header and Banner for Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
